@@ -10,16 +10,19 @@
   <packaging>pom</packaging>
   <version>1.0.0</version>
   <modules>
-    <module>burtal-api</module>
-    <module>burtal-protocol</module>
+    <module>brutal-config</module>
+    <module>brutal-protocol</module>
+    <module>brutal-rpc</module>
+    <module>brutal-remote</module>
+    <module>brutal-serializtion</module>
   </modules>
 
   <name>brutal</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>8</maven.compiler.source>
+    <maven.compiler.target>8</maven.compiler.target>
   </properties>
 
 </project>
