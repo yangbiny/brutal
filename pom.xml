@@ -7,7 +7,11 @@
 
   <groupId>com.impassive</groupId>
   <artifactId>brutal</artifactId>
+  <packaging>pom</packaging>
   <version>1.0.0</version>
+  <modules>
+    <module>burtal-api</module>
+  </modules>
 
   <name>brutal</name>
 
