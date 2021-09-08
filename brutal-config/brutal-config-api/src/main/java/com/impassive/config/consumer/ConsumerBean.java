@@ -1,8 +1,6 @@
 package com.impassive.config.consumer;
 
-/**
- * @author impassivey
- */
+/** @author impassivey */
 public class ConsumerBean<T> extends ConsumerConfig<T> {
 
   private transient T ref;

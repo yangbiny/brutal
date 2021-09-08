@@ -1,12 +1,11 @@
 package com.impassive.config.consumer;
 
+import com.brutal.common.Invoker;
 import com.brutal.common.URL;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 
-/**
- * @author impassivey
- */
+/** @author impassivey */
 @Getter
 public class ConsumerConfig<T> extends BaseConsumerConfig {
 
@@ -54,9 +53,15 @@ public class ConsumerConfig<T> extends BaseConsumerConfig {
   }
 
   private T createProxy() {
-    URL url = new URL(applicationConfig.getApplicationName(), protocolConfig.getPort(),
-        registryConfig.getHost(), registryConfig.getPort(),
-        groupName, classType);
-    return PROTOCOL.refer(classType, url).get();
+    URL url =
+        new URL(
+            applicationConfig.getApplicationName(),
+            protocolConfig.getPort(),
+            registryConfig.getHost(),
+            registryConfig.getPort(),
+            groupName,
+            classType);
+    Invoker<T> invoker = PROTOCOL.refer(classType, url);
+    return PROXY_FACTORY.proxy(invoker);
   }
 }

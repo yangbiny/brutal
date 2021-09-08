@@ -21,8 +21,14 @@ public class URL {
 
   private String applicationName;
 
-  public URL(String applicationName, Integer protocolPort, String registryHost, Integer registryPort,
-      String groupName, String serviceName, Class<?> classType) {
+  public URL(
+      String applicationName,
+      Integer protocolPort,
+      String registryHost,
+      Integer registryPort,
+      String groupName,
+      String serviceName,
+      Class<?> classType) {
     this.applicationName = applicationName;
     this.protocolPort = protocolPort;
     this.registryHost = registryHost;
@@ -32,10 +38,20 @@ public class URL {
     this.classType = classType;
   }
 
-  public URL(String applicationName, Integer protocolPort, String registryHost,
+  public URL(
+      String applicationName,
+      Integer protocolPort,
+      String registryHost,
       Integer registryPort,
-      String groupName, Class<?> classType) {
-    this(applicationName, protocolPort, registryHost, registryPort, groupName, classType.getName(),
+      String groupName,
+      Class<?> classType) {
+    this(
+        applicationName,
+        protocolPort,
+        registryHost,
+        registryPort,
+        groupName,
+        classType.getName(),
         classType);
   }
 }

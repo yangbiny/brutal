@@ -6,6 +6,4 @@ import com.brutal.common.URL;
 public interface Protocol {
 
   <T> Invoker<T> refer(Class<T> classType, URL url);
-
-
 }

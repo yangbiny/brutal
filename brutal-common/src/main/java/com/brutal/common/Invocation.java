@@ -1,7 +1,11 @@
 package com.brutal.common;
 
-public interface Invocation<T> {
+public interface Invocation {
 
-  T get();
+  String getServiceName();
+
+  Object[] getArgs();
+
+  String getMethodName();
 
 }

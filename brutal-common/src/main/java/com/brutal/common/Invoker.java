@@ -1,9 +1,8 @@
 package com.brutal.common;
 
-public class Invoker<T> implements Invocation<T> {
+public interface Invoker<T> {
 
-  @Override
-  public T get() {
-    return null;
-  }
+  Class<T> getInterfaceClass();
+
+  Result invoke(Invocation invocation);
 }
