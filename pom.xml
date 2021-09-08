@@ -14,7 +14,8 @@
     <module>brutal-protocol</module>
     <module>brutal-rpc</module>
     <module>brutal-remote</module>
-    <module>brutal-serializtion</module>
+    <module>brutal-serialization</module>
+    <module>brutal-registry</module>
   </modules>
 
   <name>brutal</name>
