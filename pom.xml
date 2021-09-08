@@ -16,6 +16,7 @@
     <module>brutal-remote</module>
     <module>brutal-serialization</module>
     <module>brutal-registry</module>
+    <module>brutal-common</module>
   </modules>
 
   <name>brutal</name>
