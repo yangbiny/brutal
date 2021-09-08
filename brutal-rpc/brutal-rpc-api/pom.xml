@@ -27,5 +27,15 @@
       <artifactId>brutal-serialization-api</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>com.impassive</groupId>
+      <artifactId>brutal-registry-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.impassive</groupId>
+      <artifactId>brutal-common</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
 </project>

@@ -3,17 +3,25 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>burtal-protocol</artifactId>
+    <artifactId>brutal-rpc</artifactId>
     <groupId>com.impassive</groupId>
     <version>1.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>brutal-protocol-api</artifactId>
+  <artifactId>brutal-rpc-brutal</artifactId>
 
   <properties>
     <maven.compiler.source>8</maven.compiler.source>
     <maven.compiler.target>8</maven.compiler.target>
   </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.impassive</groupId>
+      <artifactId>brutal-rpc-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
 
 </project>

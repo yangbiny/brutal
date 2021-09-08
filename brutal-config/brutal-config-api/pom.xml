@@ -22,6 +22,16 @@
       <artifactId>brutal-registry-api</artifactId>
       <version>${project.version}</version>
     </dependency>
+    <dependency>
+      <groupId>com.impassive</groupId>
+      <artifactId>brutal-rpc-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.impassive</groupId>
+      <artifactId>brutal-rpc-brutal</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
 
 </project>
