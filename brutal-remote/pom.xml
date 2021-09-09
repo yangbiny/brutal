@@ -13,6 +13,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>brutal-remote-api</module>
+    <module>brutal-remote-netty</module>
   </modules>
 
   <properties>
