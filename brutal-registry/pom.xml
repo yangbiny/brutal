@@ -13,6 +13,7 @@
   <packaging>pom</packaging>
   <modules>
     <module>brutal-registry-api</module>
+    <module>brutal-registry-zookeeper</module>
   </modules>
 
   <properties>

@@ -1,7 +1,9 @@
 package com.brutal.common;
 
+import com.brutal.common.exception.UrlIllegalException;
 import lombok.Getter;
 import lombok.Setter;
+import org.apache.commons.lang3.StringUtils;
 
 @Getter
 @Setter
@@ -20,6 +22,10 @@ public class URL {
   private Class<?> classType;
 
   private String applicationName;
+
+  private String providerHost;
+
+  private Integer providerPort;
 
   public URL(
       String applicationName,
@@ -53,5 +59,19 @@ public class URL {
         groupName,
         classType.getName(),
         classType);
+  }
+
+  public String registerInfo() {
+    return String.format(
+        "register host = %s ; register port = %s ;service name = %s ; group name = %s",
+        registryHost, registryPort, serviceName, groupName);
+  }
+
+  public void addParameter(ServiceMetadata serviceMetadata) {
+    if (StringUtils.isEmpty(serviceName)) {
+      throw new UrlIllegalException("serviceName is empty", this);
+    }
+    this.providerHost = serviceMetadata.getProviderHost();
+    this.protocolPort = serviceMetadata.getProviderPort();
   }
 }

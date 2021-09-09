@@ -3,13 +3,13 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
-    <artifactId>brutal-rpc</artifactId>
+    <artifactId>brutal-registry</artifactId>
     <groupId>com.impassive</groupId>
     <version>1.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>brutal-rpc-brutal</artifactId>
+  <artifactId>brutal-registry-zookeeper</artifactId>
 
   <properties>
     <maven.compiler.source>8</maven.compiler.source>
@@ -19,22 +19,7 @@
   <dependencies>
     <dependency>
       <groupId>com.impassive</groupId>
-      <artifactId>brutal-rpc-api</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.impassive</groupId>
-      <artifactId>brutal-remote-netty</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.impassive</groupId>
       <artifactId>brutal-registry-api</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>com.impassive</groupId>
-      <artifactId>brutal-registry-zookeeper</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>
